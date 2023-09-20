@@ -1,0 +1,106 @@
+.teamCardImg {
+    width: 80%;
+    position: relative;
+    z-index: 5;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: inset 0px 0px 35px rgba(0,0,0,0.20);
+    cursor: pointer;
+}
+.teamCardText {
+    width: 80%;
+    position: absolute;
+    right: 0;
+    top: -50px;
+    height: calc(100% + 170px);
+    margin-inline-start: auto;
+    z-index: 4;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.teamCardText::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    z-index: -1;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to bottom, #0800B5 0%, #F700F1 100%);
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.teamCard:hover .teamCardText::before {
+    width: 100%;
+}
+.teamList {
+    right: 0;
+    padding: 20px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.iconTeamList {
+    font-size: 18px;
+    padding: 5px;
+    color: #f700f1;
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+}
+.teamCard:hover .iconTeamList {
+    color: #ffffff;
+}
+.bottomText {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    padding: 30px;
+}
+.bottomText h3 {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 12px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    color: #F700F1;
+}
+.bottomText p {
+    font-size: 18px;
+    color: #888888;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+.teamCard:hover .bottomText h3 ,
+.teamCard:hover .bottomText p {
+    color: #ffffff;
+}

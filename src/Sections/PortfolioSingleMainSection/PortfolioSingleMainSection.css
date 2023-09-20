@@ -1,0 +1,56 @@
+.portfolioSingleMainSection {
+    padding:  0 0 100px;
+}
+.portfolioImage img {
+    object-fit: contain;
+}
+.portfolioTextContent p ,
+.portfolioTextContent ul li {
+    color: #777;
+    line-height: 1.86;
+}
+.portfolioTextContent ul li i {
+    color: #ff00f6;
+}
+.portfolioTextContent h3 {
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+}
+.boxContentPortfolio {
+    width: 90%;
+    height: 450px;
+    background-color: #fff;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 15%);
+    padding: 45px 38px;
+    background-color: #ffffff;
+    border-bottom: 12px solid #141d38;
+}
+.backGoundImage {
+    right: 0;
+    top: 10%;
+    width: 85%;
+    height: 450px;
+    z-index: -1;
+}
+.backGoundImage img {
+    height: 100%;
+    object-fit: cover;
+}
+.boxContentPortfolio h4 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #141d38;
+    line-height: 1.4;
+    text-transform: capitalize;
+}
+.boxContentPortfolio ul li h6 {
+    font-weight: bold;
+    color: #000;
+    margin-inline-end: 10px;
+}
+.boxContentPortfolio ul li p {
+    font-size: 15px;
+}

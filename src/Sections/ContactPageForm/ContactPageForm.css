@@ -1,0 +1,32 @@
+.contactPageForm {
+    padding: 50px 0 70px;
+}
+.contactPageForm .btnBlue {
+    margin: 35px auto 0 ;
+}
+.contactPageForm input {
+    height: 50px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    padding: 20px 30px;
+    margin-block-end: 35px !important;
+}
+.contactPageForm textarea {
+    padding: 20px 30px ;
+}
+.contactPageForm .contactFlexPart {
+    margin-bottom: 0 !important;
+}
+@media (max-width: 768px) {
+    .contactPageForm {
+        padding-top: 0;
+    }
+}
+@media (max-width: 600px) {
+    .contactPageForm .contactFlexPart {
+        gap: 0 !important;
+    }
+}

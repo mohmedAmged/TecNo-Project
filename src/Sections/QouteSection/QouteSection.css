@@ -1,0 +1,51 @@
+.qouteSection {
+  padding: 120px 0 80px;
+  background-image: linear-gradient(to right, #0800B5 0%, #f700f1 100%);
+  position: relative;
+  z-index: 1;
+}
+.qouteSection::after {
+  content: "";
+  background: url("../qouteBackGroundImage.png") center center no-repeat;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+}
+.qouteSection h2 ,
+.qouteSection p {
+  color: #fff !important;
+}
+.qouteSection .separators::after ,
+.qouteSection .separators::before {
+  background-color: #fff !important;
+  height: 2px !important;
+}
+.qouteSection .separators span {
+  background-color: #f700f1 !important;
+  height: 5px !important;
+  top: -2.5px !important;
+}
+.qouteSection .privacy {
+  width: fit-content;
+  margin: 50px auto;
+  font-size: 18px;
+}
+.qouteSection .privacy .nav-link {
+  color: #f821f5;
+}
+.qouteSection .num {
+  font-size: 50px;
+}
+.womanTopImage {
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  width: 100px;
+}

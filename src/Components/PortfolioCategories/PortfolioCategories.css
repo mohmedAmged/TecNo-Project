@@ -1,0 +1,59 @@
+
+.portfolioCategory {
+    margin-inline-end: 10px;
+    padding: 0 25px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #777;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+.portfolioCategory:hover , 
+.activatedList {
+    color: #000 !important;
+}
+.portfolioCategories .portfolioCategory:not(:last-of-type)::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #000;
+    transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -ms-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+}
+.portfolioCategories .portfolioCategory::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 0;
+    height: 2px;
+    background-color: #ff00f6;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.portfolioCategories .portfolioCategory:hover::before ,
+.portfolioCategories .activatedList::before {
+    width: 100% !important;
+}
+@media (max-width: 768px) {
+    .portfolioCategories .portfolioCategory::before ,
+    .portfolioCategories .activatedList::before {
+        display: none;
+    }
+    .portfolioCategory {
+        margin-top: 15px;
+    }
+}

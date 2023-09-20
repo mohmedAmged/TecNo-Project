@@ -1,0 +1,57 @@
+.mainHeading p {
+    font-size: 20px;
+    color: #2200bd;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+.mainHeading .separators {
+    position: relative;
+    margin-bottom: 35px;
+}
+.mainHeading .separators span {
+    position: absolute;
+    left: 50%;
+    top: -1.25px;
+    width: 10px;
+    height: 5px;
+    background-color: #2200bd;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.mainHeading .separators::before {
+    content: "";
+    position: absolute;
+    left: 49%;
+    top: 0;
+    width: 10px;
+    height: 2.5px;
+    background-color: #ff00f6;
+    transform: translateX(-49%);
+    -webkit-transform: translateX(-49%);
+    -moz-transform: translateX(-49%);
+    -ms-transform: translateX(-49%);
+    -o-transform: translateX(-49%);
+}
+.mainHeading .separators::after {
+    content: "";
+    position: absolute;
+    left: 51%;
+    top: 0;
+    width: 10px;
+    height: 2.5px;
+    background-color: #ff00f6;
+    transform: translateX(-51%);
+    -webkit-transform: translateX(-51%);
+    -moz-transform: translateX(-51%);
+    -ms-transform: translateX(-51%);
+    -o-transform: translateX(-51%);
+}
+.mainHeading h2 {
+    font-size: 40px;
+    color: #222222;
+    font-weight: bold;
+}

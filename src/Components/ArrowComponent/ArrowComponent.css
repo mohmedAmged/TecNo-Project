@@ -1,0 +1,107 @@
+.arrowFixed {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #000;
+    width: 60px;
+    height: 60px;
+    z-index: 101;
+    cursor: pointer;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.containerArrow {
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3px;
+}
+.arrowFixed .containerArrow i {
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+.arrowFixed:hover {
+    background-color: #ff00f6;
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+.arrowFixed:hover .containerArrow i {
+    color: #ff00f6;
+}
+.arrowFixed:hover .containerArrow {
+    animation-name: hoveredArrow;
+    animation-duration: 0.3s;
+    animation-iteration-count: 2;
+}
+@keyframes hoveredArrow {
+    0%{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-4px);
+        -webkit-transform: translateY(-4px);
+        -moz-transform: translateY(-4px);
+        -ms-transform: translateY(-4px);
+        -o-transform: translateY(-4px);
+}
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
+}
+.showArrow {
+    animation-name: showingArrow;
+    animation-duration: 0.5s;
+    opacity: 1;
+}
+@keyframes showingArrow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.hideArrow {
+    opacity: 0;
+    animation-name: hidingArrow;
+    animation-duration: 0.5s;
+}
+@keyframes  hidingArrow {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

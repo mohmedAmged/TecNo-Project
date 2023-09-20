@@ -1,0 +1,56 @@
+.mediaCard {
+    box-shadow: 0px 0px 45px rgba(0,0,0,0.15);
+    border: 1px solid #eee;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    animation-name: transformAnimate;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.mediaCard h3 {
+    font-size: 24px;
+    line-height: 1.86;
+}
+.bottomContent {
+    border-top: 1px solid #c5c5c5;
+}
+.bottomContent .image {
+    border-radius: 30%;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
+    overflow: hidden;
+    width: 35px;
+}
+@keyframes transformAnimate {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+        -webkit-transform: translateX(-50px);
+        -moz-transform: translateX(-50px);
+        -ms-transform: translateX(-50px);
+        -o-transform: translateX(-50px);
+}
+100% {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+}
+.leftContent p ,
+.rightContent p {
+    margin-bottom: 0 !important;
+}
+@media (max-width: 600px) {
+    .mediaCard {
+        height: 600px !important;
+    }
+}

@@ -1,0 +1,168 @@
+.teamMemberContent {
+    padding: 50px 0 100px;
+}
+.teamMemberContent h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+.teamMemberContent .job {
+    text-transform: uppercase;
+    color: #969696;
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.teamMemberContent .job::after ,
+.teamMemberContent h4::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #ff00f6;
+}
+.teamMemberContent .social li a {
+    text-decoration: none;
+}
+.teamMemberContent .social li a i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ff00f6;
+    border-radius: 50%;
+    color: #ff00f6;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.teamMemberContent .social li a i:hover {
+    color: #fff;
+    background-color: #ff00f6;
+}
+.teamMemberContent h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 40px;
+}
+.teamMemberContent-imageContainer img {
+    border: 5px solid #ff00f6;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.skills {
+    width: 85%;
+}
+.skillContainer {
+    width: 100%;
+}
+.skillContainer p span {
+    color: #969696;
+    font-weight: bold;
+    font-size: 17px;
+}
+.skills .myProgress {
+    width: 100%;
+    height: 5px;
+    position: relative;
+}
+.skills .myProgress .pinkProgress {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ff00f6;
+    bottom: 0px;
+    left: 0;
+    z-index: -1;
+}
+.skills .myProgress .black {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 0px;
+    z-index: 1;
+    background-color: #0e0a31;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+.skills .myProgress .getWidthPower0 {
+    width: 85%;
+}
+.skills .myProgress .getWidthPower1 {
+    width: 65%;
+}
+.skills .myProgress .getWidthPower2 {
+    width: 90%;
+}
+.skills .myProgress .getWidthPower3 {
+    width: 75%;
+}
+.skills .skillContainer .myProgress .blackbtn {
+    position: absolute;
+    bottom: -2px;
+    left: 1px;
+    width: 10px;
+    height: 10px;
+    background-color: #0e0a31;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border: 1px solid #fff;
+    z-index: 10;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+.skills .skillContainer .myProgress .getProgressPower0 {
+    left: calc(85%);
+}
+.skills .skillContainer .myProgress .getProgressPower1 {
+    left: calc(65%);
+}
+.skills .skillContainer .myProgress .getProgressPower2 {
+    left: calc(90%);
+}
+.skills .skillContainer .myProgress .getProgressPower3 {
+    left: calc(75%);
+}
+.teamMemberContent .firstp ,
+.teamMemberContent .secondp {
+    line-height: 1.86;
+    color: #969696;
+}
+@media (max-width: 991px) {
+    .skills {
+        width: 100%;
+    }
+    .teamMemberContent-imageContainer {
+        order: -1;
+    }
+    .textColumnTeamMember {
+        padding-inline-end: 15px !important;
+    }
+}

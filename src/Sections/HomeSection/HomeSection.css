@@ -1,0 +1,174 @@
+.homeSection {
+    height: 160vh;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    background-image: url("../homeSectionBackGround.jpg");
+    background-size: cover;
+    background-position: center;
+    transform: translateY(-108px);
+    -webkit-transform: translateY(-108px);
+    -moz-transform: translateY(-108px);
+    -ms-transform: translateY(-108px);
+    -o-transform: translateY(-108px);
+    overflow: hidden;
+}
+.left-image {
+    top: -10%;
+    left: 0;
+    transform: rotateZ(-80deg);
+    -webkit-transform: rotateZ(-80deg);
+    -moz-transform: rotateZ(-80deg);
+    -ms-transform: rotateZ(-80deg);
+    -o-transform: rotateZ(-80deg);
+}
+.left-image img {
+    width: 320px;
+    position: relative;
+    animation-name: ZoomInOut;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+.right-image {
+    top: -13%;
+    right: 0;
+}
+.right-image img {
+    width: 320px;
+    position: relative;
+    z-index: 20;
+    animation-name: ZoomInOutReverse;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+}
+.center-top-image {
+    left: 50%;
+    top: 25%;
+}
+.center-top-image img {
+    animation-name: ZoomInOutWithFIlter;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.center-bottom-image {
+    left: 50%;
+    bottom: 5%;
+}
+.center-bottom-image img {
+    animation-name: rotatedCircle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes ZoomInOut {
+    0%{
+        transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        -moz-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        -o-transform: scale(0.7);
+}
+    50% {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+}
+    100% {
+        transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        -moz-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        -o-transform: scale(0.7);
+}
+}
+@keyframes ZoomInOutReverse {
+    0%{
+        transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
+}
+    50% {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+}
+    100% {
+        transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
+}
+}
+@keyframes ZoomInOutWithFIlter {
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        opacity: 1;
+}
+    50% {
+        opacity: 0.9;
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        filter: hue-rotate(10DEG);
+        -webkit-filter: hue-rotate(10DEG);
+}
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
+}
+@keyframes rotatedCircle {
+    0%{
+        transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+        -moz-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -o-transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        -o-transform: rotateZ(360deg);
+}
+}
+@media (max-width: 1024px) {
+    .right-image img ,
+    .left-image img {
+        width: 250px;
+    }
+    .center-top-image {
+        width: 80px;
+    }
+    .center-bottom-image {
+        width: 50px;
+        bottom: 3%;
+    }
+}

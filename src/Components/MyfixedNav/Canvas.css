@@ -1,0 +1,242 @@
+.overLay {
+    position: fixed;
+    z-index: 101;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    background-color: #000000d5;
+    cursor: crosshair;
+}
+.overlayAppearance {
+    transform: translateX(0);
+    animation-name: overlayAppearance;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+.overlayHide {
+    transform: translateX(100%);
+    animation-name: overlayHide;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+}
+.myCanvas {
+    padding: 40px;
+    position: fixed;
+    z-index: 102;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 450px;
+    background-color: #fff;
+    overflow-y: auto;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+}
+.myCanvasHide {
+    transform: translateX(100%);
+    animation-name: myCanvasHide;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+}
+.myCanvasAppearance {
+    transform: translateX(0);
+    animation-name: myCanvasAppearance;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+.exite {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    background: #f9f9f9;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    text-align: center;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+.exite:hover {
+    transform: rotateZ(180deg);
+    -webkit-transform: rotateZ(180deg);
+    -moz-transform: rotateZ(180deg);
+    -ms-transform: rotateZ(180deg);
+    -o-transform: rotateZ(180deg);
+}
+.myCanvas-logo {
+    max-width: 150px;
+}
+.myCanvas h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-block: 40px;
+    color: #000;
+}
+.myCanvas p {
+    font-weight: 500;
+    color: #777;
+    font-size: 15px;
+    line-height: 1.86;
+    font-weight: 500;
+}
+.myCanvas .btn {
+    padding: 17px 40px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #FF9802 0%, #FFEA3B 100%);
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    margin-block: 30px 40px;
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+}
+.myCanvas .btn:hover {
+    background-image: linear-gradient(to left, #FF9802 0%, #FFEA3B 100%);
+
+}
+.myCanvas li {
+    color: #777;
+    font-weight: 400;
+    font-size: 15px;
+}
+.myCanvas li a {
+    color: #000;
+    font-size: 13px;
+}
+.list-icon {
+    width: 35px;
+    height: 35px;
+    padding-top: 2px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #ff00f6;
+    border: 2px solid #ff00f6;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: linear-gradient(to right, #FF9802 0%, #FFEA3B 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes overlayAppearance {
+    0%{
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+}
+    100% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
+}
+@keyframes overlayHide {
+    0% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+}
+@keyframes myCanvasAppearance {
+    0%{
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+    20%{
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
+}
+@keyframes myCanvasHide {
+    0% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+    80%{
+        width: 0;
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+    100%{
+        width: 0;
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+}

@@ -1,0 +1,35 @@
+.testimonialsSection {
+    padding: 100px 0;
+    overflow: hidden;
+    position: relative;
+}
+.testimonialsSection .image {
+    position: relative;
+    z-index: 5;
+}
+.testimonialsSection .leftContent , 
+.testimonialsSection .rightContent {
+    position: absolute;
+    z-index: -1;
+}
+.testimonialsSection .leftContent {
+    left: -85px;
+    top: 20%;
+    width: 60%;
+    height: 100%;
+}
+.testimonialsSection .rightContent {
+    right: -85px;
+    width: 85%;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+}
+.testimonialsCol {
+    overflow: hidden;
+}
+@media (max-width: 1024px) {
+    .testimonialsSection .row {
+        flex-wrap: nowrap;
+    }
+}

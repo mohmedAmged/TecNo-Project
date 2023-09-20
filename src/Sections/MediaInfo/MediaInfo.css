@@ -1,0 +1,8 @@
+.mediaInfo {
+    padding: 100px 0;
+}
+@media (max-width: 991px) {
+    .mediaInfo .mediaCol:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}

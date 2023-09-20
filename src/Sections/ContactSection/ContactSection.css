@@ -1,0 +1,14 @@
+.contactSection {
+    padding: 100px 0;
+    position: relative;
+}
+.notImportant {
+    font-size: 18px;
+    color: #979797;
+    margin-block: 0 40px;
+}
+@media (max-width: 991px) {
+    .contactSection .row {
+        gap: 30px;
+    }
+}

@@ -1,0 +1,39 @@
+.serviceContentShowSection {
+    padding: 50px 0 100px;
+}
+.serviceContentShowSection-titleContent h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #0a15a9;
+}
+.serviceContentShowSection h3 {
+    font-size: 30px;
+    color: #ff7e00;
+    font-weight: bold;
+}
+.serviceContentShowSection p {
+    color: #777 !important;
+    line-height: 1.65;
+}
+.serviceContentShowSection-titleContent p {
+    font-size: 17px;
+    line-height: 1.86;
+}
+@media (max-width: 1100px ) {
+    .serviceContentShowSection-titleContent p {
+        line-height: 1.65;
+    }
+}
+@media (max-width: 991px) {
+    .serviceContentShowSection-titleContent {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 600px) {
+    .serviceContentShowSection-titleContent h2 {
+        font-size: 25px;
+    }
+    .serviceContentShowSection h3 {
+        font-size: 22px;
+    }
+}

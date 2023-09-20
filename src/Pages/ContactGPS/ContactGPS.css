@@ -1,0 +1,46 @@
+.contactGPSSection {
+    padding: 0 0 100px;
+}
+.contactGPSSection .topPart {
+    margin: auto;
+    max-width: 850px;
+}
+.contactGPSSection h2 {
+    color: #3a1fc3;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.contactGPSSection p {
+    line-height: 1.86;
+    color: #777;
+    margin-bottom: 50px;
+}
+.middleGPS ,
+.googlemap {
+    height: 60vh;
+    width: 100%;
+}
+.rowOfOurLastContactSection h3 {
+    color: #ff00f6;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.rowOfOurLastContactSection .topP {
+    font-size: 17px;
+    line-height: 1.86;
+    margin-bottom: 25px;
+}
+.rowOfOurLastContactSection ul li {
+    color: #777;
+}
+@media (max-width: 991px) {
+    .rowOfOurLastContactSection .col-lg-3:first-of-type {
+        display: none;
+    }
+    .rowOfOurLastContactSection .col-lg-3:not(:first-of-type) {
+        padding: 0 !important;
+    }
+}

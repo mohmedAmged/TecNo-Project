@@ -1,0 +1,27 @@
+.workingProcess {
+    padding: 100PX 0;
+}
+.workingProcess_col-content-text h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+.workingProcess_col-content-text .line {
+    width: 1px;
+    height: 50px;
+    background-color: #a8a6a6;
+}
+.workingProcess_col-content-text p {
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    color: #000;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

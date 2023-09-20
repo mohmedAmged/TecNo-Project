@@ -1,0 +1,321 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  scroll-behavior: smooth;
+  font-family: 'Cabin', sans-serif;
+  color: #212529;
+  font-weight: 500;
+  background-color: #fff;
+}
+img {
+  width: 100%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+h1 , h2 , h3 , h4 , h5 , h6 {
+  font-family: 'Quicksand', sans-serif;
+  color: #222222;
+}
+.container {
+  max-width: 88% !important;
+}
+.whyChooseUs__bgImg {
+  z-index: -1;
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 95% !important;
+  }
+  .mainHeading h2 {
+    line-height: 1.4;
+    font-size: 35px !important;
+  }
+  .specialColor {
+    line-height: normal !important;
+  }
+  .swiperParent {
+    padding-inline-start: 0 !important;
+  }
+  .testimonialsSection .container-fluid {
+    padding-inline-end: 0 !important;
+  }
+  .mediaCard {
+    height: 540px;
+  }
+}
+@media (max-width: 991px) {
+  .canvasToggler{
+    display: none;
+  }
+  .cartContainer {
+    display: none;
+  }
+  .cartResponsiveContent {
+    display: block !important;
+    font-size: 40px !important;
+  }
+  .homeSection {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+  .homeSectionContainer {
+    transform: translateY(150px);
+    -webkit-transform: translateY(150px);
+    -moz-transform: translateY(150px);
+    -ms-transform: translateY(150px);
+    -o-transform: translateY(150px);
+}
+  .imageContainer {
+    display: none;
+  }
+  .text-col {
+    width: 100% !important;
+    padding-inline-end: 50px !important;
+  }
+  .text h1 {
+    font-size: 60px !important;
+  }
+  .backWhite {
+    display: none !important;
+  }
+  .text {
+    padding-inline-start: 0 !important;
+  }
+  .homeSection {
+    height: 55vh;
+  }
+  .servicesSection .row {
+    flex-wrap: wrap;
+  }
+  .aboutSection {
+    padding: 75px 0 150px;
+  }
+  .aboutSection-left-image {
+    top: 7.5%;
+  }
+  .ourWork-icon-bottom {
+    top: 90%;
+  }
+  .testimonialsSection .imgCol {
+    display: none;
+  }
+  .testimonialsSection .testimonialsCol  {
+    padding-inline: 30px 45px;
+    margin-top: 20px;
+  }
+  .testimonialsSection .rightContent {
+    width: 120%;
+    right: 0;
+  }
+  .testimonialsSection .leftContent {
+    display: none;
+  }
+  .modalImage {
+    margin-top: 20px;
+  }
+  .workingProcess_col-content .workingProcess_col-content-image {
+    order: 2 !important;
+  }
+  .workingProcess_col-content .workingProcess_col-content-text {
+    order: 1 !important;
+  }
+  .workingProcess_col-content-text h3 {
+    order: 3 !important;
+  }
+  .workingProcess_col-content-text .line {
+    order: 2 !important;
+  }
+  .workingProcess_col-content-text p {
+    order: 1 !important;
+  }
+  .footer .col-lg-3 {
+    padding-inline: 15px !important;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 98%;
+  }
+  .homeSection {
+    min-height: 90vh;
+  }
+  .homeSectionContainer {
+    transform: translateY(300px);
+    -webkit-transform: translateY(300px);
+    -moz-transform: translateY(300px);
+    -ms-transform: translateY(300px);
+    -o-transform: translateY(300px);
+  }
+  .left-image {
+    top: -5%;
+  }
+  .right-image {
+    top: -10%;
+    right: -5%;
+  }
+  .ourProjectsSection .swiper-slide {
+    width: 40% !important;
+  }
+  .ourProjectsSection .swiperParent {
+    padding-inline-start: 130px !important;
+  }
+  .testimonialsSection .testimonialsCol {
+    padding-inline: 20px 35px;
+  }
+  .carouselSection .carouselSectionMainSwiper {
+    padding-inline-start: 60px !important;
+  }
+  .carouselSection .swiper-slide {
+    width: calc(100% / 3) !important;
+  }
+  .popupBtn {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .left-image , 
+  .right-image {
+    width: 190px;
+  }
+  .center-top-image {
+    width: 60px;
+  }
+  .homeSection {
+    min-height: 105vh;
+  }
+  .homeSectionContainer {
+    transform: translateY(180px);
+    -webkit-transform: translateY(180px);
+    -moz-transform: translateY(180px);
+    -ms-transform: translateY(180px);
+    -o-transform: translateY(180px);
+}
+  .text h1 {
+    font-size: 40px !important;
+  }
+  .text-col {
+    padding: 20px !important;
+  }
+  .text .top ,
+  .text .bottom {
+    font-size: 16px;
+  }
+  .text .btn {
+    margin-top: 10px;
+  }
+  .ourWork-icon-bottom {
+    left: 85%;
+  }
+  .top-left {
+    top: 2%;
+    left: 8%;
+  }
+  .top-right {
+    top: 7%;
+    right: 10%;
+  }
+  .bottom-right {
+    display: none;
+  }
+  .aboutSection-left-image {
+    top: 8%;
+  }
+  .aboutSection-right-image {
+    left: 80%;
+    top: 40%;
+  }
+  .aboutSection-bottom-image {
+    left: 80%;
+    top: 88%;
+  }
+  .ourWork-icon-topleft {
+    top: 15%;
+    left: 5%;
+  }
+  .ourWork-icon-topRight {
+    top: 45%;
+    left: 85%;
+  }
+  .card-body p {
+    padding: 0;
+  }
+  .mainHeading h2 {
+    font-size: 25px !important;
+  }
+  .mainHeading .separators::before {
+    left: 47.5%;
+  }
+  .mainHeading .separators::after {
+    left: 52.5%;
+  }
+  .mainHeading .separators span {
+    top: -1.5px !important;
+  }
+  .myHomeForm {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .ourProjectsSection .swiper-slide {
+    width: 100% !important;
+  }
+  .ourProjectsSection .swiperParent {
+    padding-inline-end: 120px !important;
+    padding-inline-start: 0 !important;
+  }
+  .mainHeading {
+    position: relative;
+    z-index: 12;
+  }
+  .testimonialsCard {
+    padding: 30px !important;
+  }
+  .mediaCard h3 {
+    margin-top: 10px;
+  }
+  .contactFlexPart {
+    flex-wrap: wrap !important;
+  }
+  .carouselSection .swiper-slide {
+    width: 50% !important;
+  }
+  .carouselSection .carouselSectionMainSwiper {
+    padding-inline-start: 0 !important;
+  }
+  .footerBottomContent .copyWriteContent {
+    margin-bottom: 10px;
+  }
+  .testimonialsCard .testimonialsCardIcons {
+    display: none;
+  }
+  .whyChooseUs__boxsList li {
+    width: 100% !important;
+  }
+  .HomeSectionForEveryPage__title h1 {
+    font-size: 35px;
+  }
+  .HomeSectionForEveryPage__pName h4 {
+    gap: 5px !important;
+  }
+  .homeSectionEveryPage__content {
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+  }
+  .HomeSectionForEveryPage {
+    display: flex;
+    align-items: center;
+  }
+  .HomeSectionForEveryPage  .container {
+    height: fit-content !important;
+  }
+}
